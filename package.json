@@ -4,8 +4,11 @@
   "description": "Basic React Boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NewSky54/React-Boilerplate.git"
@@ -22,5 +25,9 @@
   "homepage": "https://github.com/NewSky54/React-Boilerplate#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
