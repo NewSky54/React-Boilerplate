@@ -1,0 +1,26 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Basic React Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewSky54/React-Boilerplate.git"
+  },
+  "keywords": [
+    "Node",
+    "React"
+  ],
+  "author": "Skyler Escobedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewSky54/React-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/NewSky54/React-Boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
