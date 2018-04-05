@@ -1,7 +1,9 @@
 # React-Boilerplate
-React-Boilerplate
+ - React-Boilerplate
 
 ## Setup
-npm install
-npm run build
-npm start
+```sh
+$ npm install
+$ npm run build
+$ node start
+```
