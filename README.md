@@ -1,9 +1,9 @@
 # React-Boilerplate
  - React-Boilerplate
 
-## Setup
+## Dev Setup
 ```sh
 $ npm install
-$ npm run build
-$ node start
+$ npm run webpack 
+$ node run server
 ```
