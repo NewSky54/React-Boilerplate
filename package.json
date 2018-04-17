@@ -1,33 +1,36 @@
 {
-  "name": "react-boilerplate",
+  "name": "gratitude-extension",
   "version": "1.0.0",
-  "description": "Basic React Boilerplate",
+  "description": "Extension to write down what your grateful for",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-server && npm run build-client",
-    "build-server": "babel src/server --out-dir ./dist",
-    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "node ./dist/index.js"
-},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NewSky54/React-Boilerplate.git"
+    "start": "webpack && node server/server.js",
+    "webpack": "webpack -w",
+    "server": "nodemon server/server.js",
+    "start-dev": "nodemon server/server.js & webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Node",
-    "React"
-  ],
   "author": "Skyler Escobedo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NewSky54/React-Boilerplate/issues"
-  },
-  "homepage": "https://github.com/NewSky54/React-Boilerplate#readme",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "nodemon": "^1.17.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.10.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
   }
 }
