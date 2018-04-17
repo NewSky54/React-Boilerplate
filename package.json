@@ -1,7 +1,7 @@
 {
-  "name": "gratitude-extension",
+  "name": "React-Boilerplate",
   "version": "1.0.0",
-  "description": "Extension to write down what your grateful for",
+  "description": "Boilerplate for React and Node",
   "main": "index.js",
   "scripts": {
     "start": "webpack && node server/server.js",
